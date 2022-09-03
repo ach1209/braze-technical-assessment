@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -8,6 +8,10 @@
 .lesson-header {
   background-color: #266e79;
   color: #fff;
+}
+
+.lesson {
+  font-size: 2rem;
 }
 
 .lesson-title {
@@ -25,6 +29,14 @@
   }
 }
 
+.lesson-description {
+  font-size: 1.8rem;
+}
+
+.video-wrapper {
+  padding: 5rem 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,14 +48,13 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 1.6rem;
   background-color: #fff;
 }
 
 h1,
 h2 {
-  font-family: "Jost", sans-serif;
   font-weight: 500;
 }
 

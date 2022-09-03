@@ -3,6 +3,10 @@
   color: $white;
 }
 
+.lesson {
+  font-size: 2rem;
+}
+
 .lesson-title {
   font-size: 2rem;
   line-height: 8rem;
@@ -14,4 +18,8 @@
   @include device-min(500px) {
     font-size: 3.2rem;
   }
+}
+
+.lesson-description {
+  font-size: 1.8rem;
 }
