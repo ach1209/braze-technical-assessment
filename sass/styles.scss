@@ -5,6 +5,9 @@
 @import './components/container';
 @import './components/lesson-header';
 @import './components/video-wrapper';
+@import './components/grid';
+@import './components/card';
+@import './components/accordion';
 
 * {
   box-sizing: border-box;
@@ -18,16 +21,26 @@ html {
 
 body {
   font-family: $primaryFont;
-  font-size: 1.6rem;
   background-color: $white;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 500;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.content-body-title {
+  color: $primaryColor;
+  font-size: 2.8rem;
+  line-height: 8rem;
 }

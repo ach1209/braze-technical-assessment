@@ -1,0 +1,13 @@
+.card {
+
+  &-title {
+    color: $secondaryColor;
+    font-size: 2.4rem;
+    line-height: 6rem;    
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.8rem;
+  }
+}

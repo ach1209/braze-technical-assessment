@@ -1,0 +1,54 @@
+.accordion {
+
+  &-controls {
+    display: flex;
+    align-items: center;
+
+    @include device-max(609px) {
+      justify-content: space-between;
+    }
+  }
+
+  &-tab {
+    color: $secondaryColor;
+    line-height: 6rem;
+
+    @include device-max(419px) {
+      font-size: 1.6rem;
+      margin-right: 2rem;
+    }
+
+    @include device-min(420px) {
+      font-size: 1.8rem;
+      margin-right: 4rem;    
+    }
+
+    &-active {
+      font-weight: 500;
+      border-bottom: 2px solid $secondaryColor;
+    }
+  }
+
+  &-toggle {
+    cursor: pointer;
+  }
+
+  &-content {
+    display: block;
+
+    &-inactive {
+      display: none;
+    }
+
+    &-container {
+      margin-top: 1rem;
+    }
+
+    p {
+      color: $textColor;
+      font-size: 1.8rem;
+      margin: 3rem 0;      
+    }
+  }
+
+}
