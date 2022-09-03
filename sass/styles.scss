@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jost:wght@400;500&display=swap');
+
+@import './base/variables';
+@import './base/mixins';
+@import './components/container';
+@import './components/lesson-header';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* Font size is now set to 10px. 1rem = 10px */
+}
+
+body {
+  font-family: $primaryFont;
+  font-size: 1.6rem;
+  background-color: $white;
+}
+
+h1,
+h2 {
+  font-family: $headingFont;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

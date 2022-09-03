@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jost:wght@400;500&display=swap");
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
+.lesson-header {
+  background-color: #266e79;
+  color: #fff;
+}
+
+.lesson-title {
+  font-size: 2rem;
+  line-height: 8rem;
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+  .lesson-title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .lesson-title {
+    font-size: 3.2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* Font size is now set to 10px. 1rem = 10px */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
