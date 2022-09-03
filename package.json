@@ -1,0 +1,14 @@
+{
+  "name": "braze-technical-assessment",
+  "version": "1.0.0",
+  "description": "Technical Learning Experience Specialist take-home assessment",
+  "main": "index.js",
+  "scripts": {
+    "css": "sass --watch sass/styles.scss css/styles.css"
+  },
+  "author": "Anthony",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.8"
+  }
+}
