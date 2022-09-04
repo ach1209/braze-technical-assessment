@@ -5,15 +5,19 @@
   padding: 2rem;
 }
 
-.lesson-header {
-  background-color: #266e79;
-  color: #fff;
+.section-title {
+  color: #266e79;
+  font-size: 2.8rem;
+  line-height: 8rem;
 }
 
 .lesson {
   font-size: 2rem;
 }
-
+.lesson-header {
+  background-color: #266e79;
+  color: #fff;
+}
 .lesson-title {
   font-size: 2rem;
   line-height: 8rem;
@@ -28,9 +32,8 @@
     font-size: 3.2rem;
   }
 }
-
 .lesson-description {
-  font-size: 1.8rem;
+  color: #fff;
 }
 
 .video-wrapper {
@@ -51,10 +54,6 @@
   color: #404040;
   font-size: 2.4rem;
   line-height: 6rem;
-}
-.card p {
-  color: #505051;
-  font-size: 1.8rem;
 }
 
 .accordion-controls {
@@ -98,18 +97,12 @@
 .accordion-content-container {
   margin-top: 1rem;
 }
-.accordion-content p {
-  color: #505051;
-  font-size: 1.8rem;
+.accordion-content p, .accordion-content .answer-choices .answer label, .answer-choices .answer .accordion-content label {
   margin: 3rem 0;
 }
 
 .quiz-section {
   background-color: #f7f7f7;
-}
-.quiz-section p {
-  color: #505051;
-  font-size: 1.8rem;
 }
 
 .answer-choices {
@@ -126,10 +119,6 @@
   .answer-choices .answer {
     line-height: 6rem;
   }
-}
-.answer-choices .answer label {
-  color: #505051;
-  font-size: 1.8rem;
 }
 .answer-choices .answer span {
   display: block;
@@ -174,10 +163,9 @@ ul {
   list-style-type: none;
 }
 
-.section-title {
-  color: #266e79;
-  font-size: 2.8rem;
-  line-height: 8rem;
+p, .answer-choices .answer label {
+  color: #505051;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

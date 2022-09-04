@@ -1,10 +1,5 @@
 .quiz-section {
   background-color: $bgColor;
-
-  p {
-    color: $textColor;
-    font-size: 1.8rem;
-  }
 }
 
 .answer-choices {
@@ -22,8 +17,7 @@
     }
 
     label {
-      color: $textColor;
-      font-size: 1.8rem;
+      @extend p;
     }
 
     span {

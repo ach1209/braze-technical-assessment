@@ -1,25 +1,25 @@
-.lesson-header {
-  background-color: $primaryColor;
-  color: $white;
-}
-
 .lesson {
   font-size: 2rem;
-}
 
-.lesson-title {
-  font-size: 2rem;
-  line-height: 8rem;
-
-  @include device-minmax(400px, 499px) {
-    font-size: 2.5rem;
+  &-header {
+    background-color: $primaryColor;
+    color: $white;
   }
 
-  @include device-min(500px) {
-    font-size: 3.2rem;
-  }
-}
+  &-title {
+    font-size: 2rem;
+    line-height: 8rem;
 
-.lesson-description {
-  font-size: 1.8rem;
+    @include device-minmax(400px, 499px) {
+      font-size: 2.5rem;
+    }
+
+    @include device-min(500px) {
+      font-size: 3.2rem;
+    }    
+  }
+
+  &-description {
+    color: $white;
+  }
 }
