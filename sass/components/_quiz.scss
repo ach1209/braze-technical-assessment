@@ -1,0 +1,44 @@
+.quiz-section {
+  background-color: $bgColor;
+
+  p {
+    color: $textColor;
+    font-size: 1.8rem;
+  }
+}
+
+.answer-choices {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  .answer {
+    @include device-max(561px) {
+      line-height: 4rem;
+    }
+
+    @include device-min(562px) {
+      line-height: 6rem;
+    }
+
+    label {
+      color: $textColor;
+      font-size: 1.8rem;
+    }
+
+    span {
+      display: block;
+      font-size: 1.8rem;
+      line-height: 1;
+      margin-left: 1.8rem;
+    }
+
+    &-wrong {
+      color: $danger;
+    }
+
+    &-correct {
+      color: $safe;
+    }
+  }
+}

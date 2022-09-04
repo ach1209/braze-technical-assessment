@@ -28,3 +28,32 @@ function toggleContent() {
     }
   })
 }
+
+/**
+ * Quiz
+ */
+
+const answers = document.querySelectorAll('.answer')
+answers.forEach(answer => answer.addEventListener('change', checkAnswer))
+
+function checkAnswer() {
+  // Clear existing spans inside <div class="answer">
+  const spanList = document.querySelectorAll('.answer span')
+
+  if (spanList.length > 0) {
+    spanList.forEach(span => span.remove())
+  }
+
+  // Create a new span element to be added into <div class="answer">
+  const spanElement = document.createElement('span')
+  
+  if (this.firstElementChild.id !== 'answer2') {
+    spanElement.classList.add('answer-wrong')
+    spanElement.innerHTML = 'That\'s not right'
+  } else {
+    spanElement.classList.add('answer-correct')
+    spanElement.innerHTML = 'That\'s right!'
+  }
+
+  this.append(spanElement)
+}
